@@ -1,27 +1,30 @@
 aside{
-    height: calc(100vh - 96px);
-    width: 150px;
     background-color: rgb(5, 30, 52);
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
 }
 .container_aside{
-    height: 100vh;
-    display: flex;
+    height: 100%;
+    width: 150px;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
+@media (max-width:768px) {
+
+    .container_aside{
+        width: 75px;
+    }
+}
+
 /* mian */
 .main-scroll{
-    height: 100vh;
+    width: calc(100% - 75px);
     overflow-y: scroll;
 }
 
 .blue_row {
-    max-width: 100%;
     background-color: rgb(46, 133, 255);
 }
 
